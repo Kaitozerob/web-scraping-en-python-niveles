@@ -1,65 +1,72 @@
-# 🕸️ Web Scraping in Python by Levels
+# 🌐 Nivel 1: Scraping a Static Page
 
-Welcome to the **Web Scraping in Python** educational repository, based on the course by **Leonardo Kuffo**.
+This folder contains the first practice exercise of the Web Scraping in Python course by **Leonardo Kuffo**.
 
-This repository is organized into multiple **branches**, each representing a different level of web scraping expertise, from beginner to advanced.
-
----
-
-## 🌿 About this Repository
-
-This project follows a **step-by-step, level-based** approach to web scraping using Python. Each level is self-contained and focuses on practical examples using real websites and modern libraries.
-
-You'll learn by doing—scraping more than 20 real websites, using tools like:
-- Requests
-- LXML
-- BeautifulSoup
-- Scrapy
-- Selenium
-- Requests-HTML
-- Cloudscraper
-
-We also explore advanced topics like:
-- CAPTCHA and login bypassing
-- JavaScript-rendered pages
-- API interaction and automation
-- Image and file extraction
-- MongoDB storage and scheduling
+In this level, we learn how to:
+- Make HTTP requests using `requests`
+- Parse HTML using `lxml`
+- Extract data using XPath
+- Handle character encoding
 
 ---
 
-## 🌳 Branch Structure
+## 🧪 Example: Wikipedia Languages
 
-Each branch contains code and explanations specific to its level. Switch to the branch you want to explore:
+We extract the language names (like English, Español, Русский...) from the main page of [Wikipedia.org](https://www.wikipedia.org/).
 
-| Branch Name            | Description                                         |
-|------------------------|-----------------------------------------------------|
-| `main`                 | Base structure and repository overview              |
-| `nivel-1-pagina-estatica`  | Scraping a single static page                       |
-| `nivel-2-crawling`          | Scraping multiple pages (pagination, crawling)     |
-| `nivel-3-dinamicas`         | Scraping dynamic content with JavaScript           |
-| `nivel-4-apis-iframes`      | Working with APIs, iframes, and embedded scripts   |
-| `nivel-5-protegidas`        | Bypassing CAPTCHA, login, Cloudflare & CSRF tokens |
-| `nivel-extra`               | Automation, MongoDB, image scraping, scheduling     |
-
----
-
-## 🏁 Getting Started
-
-To explore a level:
+### 📄 File
 
 ```bash
-git clone https://github.com/your-user/web-scraping-en-python-niveles.git
-cd web-scraping-en-python-niveles
-git checkout nivel-1-pagina-estatica
+level-1-static-page/wikipedia_languages.py
 ```
 
-You can replace the branch name with any level you want to try.
+### 🧰 Tools Used
+
+- `requests` → for sending HTTP requests
+- `lxml.html` → for parsing and navigating the HTML DOM
+- `XPath` → for selecting elements from the HTML structure
+
+---
+
+## ▶️ How to Run
+
+Make sure you have the required libraries installed:
+
+```bash
+pip install requests lxml
+```
+
+Then run the script:
+
+```bash
+python wikipedia_languages.py
+```
+
+You should see a list of languages printed in the terminal.
+
+---
+
+## 📦 Output Example
+
+```
+English
+Español
+Deutsch
+Русский
+Français
+...
+```
+
+---
+
+## 📚 Learnings
+
+✅ How to inspect HTML structure  
+✅ How to build XPath expressions  
+✅ How to get clean text data from a static HTML file
 
 ---
 
 ## 👨‍🏫 Credits
 
-This repository is based on the course by **Leonardo Kuffo**. All credits for the original learning material go to him.
-
-Happy scraping! 🕷️✨
+Based on the educational content by **Leonardo Kuffo**.
