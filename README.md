@@ -52,9 +52,9 @@ Français
 ---
 
 <details>
-<summary>2. StackOverflow Questions (stackoverflow_questions.py)</summary>
+<summary>2. StackOverflow Basic Titles (stackoverflow_questions.py)</summary>
 
-This script scrapes the titles of the most recent questions on [StackOverflow](https://stackoverflow.com/questions) using `requests` and `BeautifulSoup`.
+This script extracts only the titles of the most recent questions on [StackOverflow](https://stackoverflow.com/questions) using `requests` and `BeautifulSoup`.
 
 ### 📄 File
 
@@ -79,14 +79,56 @@ python stackoverflow_questions.py
 
 ---
 
+<details>
+<summary>3. StackOverflow Full Scraper (stackoverflow_scraper.py)</summary>
+
+This script scrapes the most recent questions from [StackOverflow](https://stackoverflow.com/questions), extracting key details such as title, description, tags, author, reputation and publication date.
+
+### 📄 File
+
+```bash
+level-1-static-page/stackoverflow_scraper.py
+```
+
+### 🧰 Tools Used
+
+- `requests`
+- `beautifulsoup4`
+- `lxml`
+
+### ▶️ How to Run
+
+```bash
+pip install requests beautifulsoup4 lxml
+python stackoverflow_scraper.py
+```
+
+### 📦 Output Example
+
+```
+Título: How to merge two dictionaries in a single expression?
+Link: https://stackoverflow.com/questions/12345678
+Descripción: I have two dictionaries and I want to write a single expression...
+Tags: python, dictionary, merge
+Autor: Guido
+Reputación: 129342
+Fecha: asked 2 hours ago
+```
+
+</details>
+
+---
+
 ## 📚 Learnings
 
 ✅ How to inspect HTML and CSS structure  
 ✅ How to build XPath and CSS selector expressions  
-✅ How to get clean text data from static HTML content
+✅ How to get clean text data from static HTML content  
+✅ How to structure a modular and scalable web scraper using Python
 
 ---
 
 ## 👨‍🏫 Credits
 
-Based on the educational content by **Leonardo Kuffo**.
+Based on the educational content by **Leonardo Kuffo**.  
+Extended and documented by **Joan Talizo Balbin**.
